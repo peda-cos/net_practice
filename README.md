@@ -6,15 +6,12 @@
 
 - [About](#about)
 - [Prerequisites](#prerequisites)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Levels Overview](#levels-overview)
 - [Key Concepts](#key-concepts)
-- [Commands & Workflow](#commands--workflow)
 - [Troubleshooting](#troubleshooting)
 - [Deployment](#deployment)
-- [Contributing](#contributing)
 
 ## 🎯 About
 
@@ -39,27 +36,6 @@ NetPractice is a comprehensive networking training project designed to teach TCP
 - Modern web browser (Chrome, Firefox, Safari, or Edge)
 - Git (for version control and submission)
 - Text editor or IDE for viewing configuration files
-
-## 🛠 Installation
-
-### 1. Clone the Repository
-```bash
-git clone <your-repository-url>
-cd net_practice
-```
-
-### 2. Download the Training Interface
-According to the project instructions:
-1. Download the NetPractice file from your project page
-2. Extract the files to any folder
-3. Open the `index.html` file in your web browser
-
-### 3. Verify Installation
-```bash
-# Check that you have all level files
-ls level*.json
-# Should show: level1.json level2.json ... level10.json
-```
 
 ## 🎮 Usage
 
@@ -160,45 +136,6 @@ Each `levelX.json` contains:
 - **Default Route**: `0.0.0.0/0` - catches all unmatched traffic
 - **Static Route**: Manually configured path to specific networks
 - **Gateway**: Router interface that forwards traffic between networks
-
-## ⚡ Commands & Workflow
-
-### Basic Workflow
-```bash
-# 1. Start working on a level
-# Open index.html → Select level → Configure network
-
-# 2. Export your solution
-# Click [Get my config] → Save as levelX.json
-
-# 3. Commit your progress
-git add levelX.json
-git commit -m "Complete level X: [brief description]"
-
-# 4. Push to repository
-git push origin main
-```
-
-### Validation Commands
-```bash
-# Check JSON syntax
-python -m json.tool level1.json
-
-# View configuration structure
-cat level1.json | jq '.'
-
-# Compare levels
-diff level1.json level2.json
-```
-
-### Development Helpers
-```bash
-# Create backup before major changes
-cp level5.json level5.json.backup
-
-# Quick level status check
-for f in level*.json; do echo "$f: $(wc -c < "$f") bytes"; done
-```
 
 ## 🔧 Troubleshooting
 
