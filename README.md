@@ -2,17 +2,6 @@
 
 > **A hands-on networking project to master TCP/IP addressing and small-scale network configuration through 10 progressively challenging levels.**
 
-## 📋 Table of Contents
-
-- [About](#about)
-- [Prerequisites](#prerequisites)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Levels Overview](#levels-overview)
-- [Key Concepts](#key-concepts)
-- [Troubleshooting](#troubleshooting)
-- [Deployment](#deployment)
-
 ## 🎯 About
 
 NetPractice is a comprehensive networking training project designed to teach TCP/IP addressing fundamentals through practical exercises. You'll configure small-scale networks by solving 10 progressively challenging levels, each presenting a non-functional network diagram that needs proper configuration.
